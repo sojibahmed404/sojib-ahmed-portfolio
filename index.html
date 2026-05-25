@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Md Sojib Ahmed | CSE Student & Web Developer</title>
+  <meta name="description" content="Portfolio of Md Sojib Ahmed — CSE student at Khwaja Yunus Ali University. Passionate about web development, Flutter, and problem solving."/>
+  <meta name="keywords" content="Md Sojib Ahmed, CSE student, web developer, Flutter, React, portfolio, KYAU"/>
+  <meta name="author" content="Md Sojib Ahmed"/>
+  <meta property="og:title" content="Md Sojib Ahmed | Developer Portfolio"/>
+  <meta property="og:description" content="CSE student passionate about web development, Flutter apps, and problem solving."/>
+  <meta property="og:type" content="website"/>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2338bdf8'/%3E%3Cstop offset='100%25' stop-color='%23818cf8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='%230d1117' stroke='url(%23grad)' stroke-width='4'/%3E%3Ctext x='50%25' y='68%25' font-family='system-ui, sans-serif' font-weight='900' font-size='56' fill='url(%23grad)' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E"/>
+  <link rel="stylesheet" href="css/global.css"/>
+  <link rel="stylesheet" href="css/home.css"/>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cur-dot"></div>
+<div id="cur-ring"></div>
+
+<!-- KONAMI OVERLAY -->
+<div id="konami-overlay">
+  <div class="konami-emoji">🎉</div>
+  <h2 class="konami-title">You Found the Easter Egg!</h2>
+  <p class="konami-sub">↑↑↓↓←→←→BA — Incredible! 🕹️<br/>You truly have the developer instinct. Sojib would be proud!</p>
+  <button class="konami-close" id="konamiClose">Awesome, Close ✕</button>
+</div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-logo-wrap">
+    <div class="loader-logo">Sojib<span class="ld-accent">.</span></div>
+  </div>
+  <div class="loader-dots">
+    <span></span><span></span><span></span>
+  </div>
+  <div class="loader-progress">
+    <div class="loader-bar" id="loader-bar"></div>
+  </div>
+  <div class="loader-status" id="loader-status">Initializing...</div>
+</div>
+
+<!-- SOCIAL SIDEBAR -->
+<aside class="soc-sidebar" aria-label="Social links">
+  <div class="soc-line"></div>
+  <a href="https://github.com/sojibahmed404/" target="_blank" rel="noopener" class="soc-btn" aria-label="GitHub">
+    <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+    <div class="soc-tip">GitHub</div>
+  </a>
+  <a href="https://www.linkedin.com/in/md-sojib-ahmed-a58ab03a2/" target="_blank" rel="noopener" class="soc-btn" aria-label="LinkedIn">in<div class="soc-tip">LinkedIn</div></a>
+  <a href="mailto:mdsojibahmed544@gmail.com" class="soc-btn" aria-label="Email">@<div class="soc-tip">Email</div></a>
+  <a href="https://www.facebook.com/mdsojib.ahamed.9615" target="_blank" rel="noopener" class="soc-btn" aria-label="Facebook">f<div class="soc-tip">Facebook</div></a>
+  <div class="soc-line bottom"></div>
+</aside>
+
+<!-- PAGE INDICATOR -->
+<nav class="page-indicator" aria-label="Page sections">
+  <div class="pi-dot active" title="Home"></div>
+  <div class="pi-dot" title="Intro"></div>
+</nav>
+
+<!-- NAVIGATION -->
+<nav role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon">S</div>
+    <span>Sojib Ahmed</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active" id="nav-home">Home</a></li>
+    <li><a href="about.html" id="nav-about">About</a></li>
+    <li><a href="skills.html" id="nav-skills">Skills</a></li>
+    <li><a href="projects.html" id="nav-projects">Projects</a></li>
+    <li><a href="contact.html" id="nav-contact">Contact</a></li>
+  </ul>
+  <div class="nav-available">
+    <span class="nav-available-dot"></span>
+    Open to Internship
+  </div>
+  <button class="nav-ham" id="nav-ham" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<nav class="nav-drawer" id="nav-drawer">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="skills.html">Skills</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- HERO SECTION -->
+<section id="home" aria-label="Hero section">
+  <!-- Background elements -->
+  <div class="hero-grid-bg"></div>
+  <div class="hero-orb"></div>
+  <div class="hero-orb"></div>
+  <div class="hero-orb"></div>
+
+  <!-- Left content -->
+  <div class="hero-left">
+    <div class="hero-greeting reveal" data-delay="200">
+      Hello, World! 👋
+    </div>
+    <h1 class="hero-name reveal" data-delay="350">
+      <span class="name-line1">I'm Md</span>
+      <span class="name-line2 scramble" data-text="Sojib Ahmed">Sojib Ahmed</span>
+    </h1>
+    <div class="hero-role-wrap reveal" data-delay="450">
+      <strong>CSE Student</strong> at KYAU &nbsp;·&nbsp; Currently learning:
+      <span id="typewriter-text"></span>
+    </div>
+    <p class="hero-desc reveal" data-delay="550">
+      Passionate about building modern web applications, cross-platform mobile apps with Flutter, and solving complex problems. Always learning, always building. 🚀
+    </p>
+    <div class="hero-btns reveal" data-delay="650">
+      <a href="projects.html" class="btn-primary mag-btn" id="cta-projects">View My Projects →</a>
+      <a href="contact.html" class="btn-outline mag-btn" id="cta-contact">Say Hello 👋</a>
+    </div>
+  </div>
+
+  <!-- Right: Profile image -->
+  <div class="hero-right reveal" data-delay="400">
+    <div class="hero-img-container">
+      <div class="hero-img-ring">
+        <div class="hero-img-ring-inner"></div>
+      </div>
+      <div class="hero-img-blob">
+        <img src="assets/sojib.png" alt="Md Sojib Ahmed — CSE Student and Developer" loading="eager"/>
+      </div>
+      <!-- Floating badges -->
+      <div class="hero-badge hero-badge-1">
+        <div class="badge-icon">💻</div>
+        <span>Web Developer</span>
+      </div>
+      <div class="hero-badge hero-badge-2">
+        <div class="badge-icon">📱</div>
+        <span>Flutter Dev</span>
+      </div>
+      <div class="hero-badge hero-badge-3">
+        <div class="badge-icon">✅</div>
+        <span>Open to Work</span>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+<!-- DEVELOPER DASHBOARD SECTION -->
+<section id="dev-dashboard" class="dev-dashboard section-anchor reveal" data-delay="100">
+  <div class="dashboard-header text-center">
+    <div class="section-eyebrow">02 — SYSTEM ANALYTICS</div>
+    <h2 class="section-title">Developer <span class="hl">Dashboard</span></h2>
+    <p class="section-sub">Real-time metrics, technical competence, and academic roadmap.</p>
+  </div>
+
+  <div class="dashboard-grid">
+    <!-- Card 1: Core Metrics & Stats -->
+    <div class="dash-card metrics-card reveal" data-delay="200">
+      <div class="card-glow"></div>
+      <div class="card-header-icon">📊</div>
+      <h3>System Metrics</h3>
+      <div class="stats-grid">
+        <div class="dash-stat-item">
+          <div class="ds-num"><span data-count="6" data-suffix="+">0+</span></div>
+          <div class="ds-label">Skills Mastered</div>
+          <div class="ds-tooltip">C, C++, Java, JavaScript, Dart, HTML/CSS</div>
+        </div>
+        <div class="dash-stat-item">
+          <div class="ds-num"><span data-count="8" data-suffix="+">0+</span></div>
+          <div class="ds-label">Projects Built</div>
+          <div class="ds-tooltip">Emergency Blood Finder, KYAU PDF Builder, Portfolio</div>
+        </div>
+        <div class="dash-stat-item">
+          <div class="ds-num"><span data-count="2" data-suffix="nd Yr">0</span></div>
+          <div class="ds-label">CSE Student</div>
+          <div class="ds-tooltip">Khwaja Yunus Ali University • CSE Department</div>
+        </div>
+        <div class="dash-stat-item">
+          <div class="ds-num"><span data-count="150" data-suffix="+">0+</span></div>
+          <div class="ds-label">LeetCode Solved</div>
+          <div class="ds-tooltip">Data Structures & Algorithms in C++ & Java</div>
+        </div>
+        <div class="dash-stat-item">
+          <div class="ds-num"><span data-count="500" data-suffix="+">0+</span></div>
+          <div class="ds-label">Git Commits</div>
+          <div class="ds-tooltip">Continuous integration & source control history</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: Interactive Core Stack Explorer -->
+    <div class="dash-card stack-card reveal" data-delay="300">
+      <div class="card-glow"></div>
+      <div class="card-header-icon">⚡</div>
+      <h3>Core Tech Stack</h3>
+      <div class="stack-list">
+        <div class="stack-item" data-tech="html">
+          <div class="stack-info">
+            <span class="stack-name">HTML / CSS / JS</span>
+            <span class="stack-pct">95%</span>
+          </div>
+          <div class="stack-bar-wrap">
+            <div class="stack-bar" style="--target-width: 95%"></div>
+          </div>
+        </div>
+        <div class="stack-item" data-tech="react">
+          <div class="stack-info">
+            <span class="stack-name">React.js / Vite / Tailwind</span>
+            <span class="stack-pct">90%</span>
+          </div>
+          <div class="stack-bar-wrap">
+            <div class="stack-bar" style="--target-width: 90%"></div>
+          </div>
+        </div>
+        <div class="stack-item" data-tech="flutter">
+          <div class="stack-info">
+            <span class="stack-name">Flutter / Dart Mobile</span>
+            <span class="stack-pct">85%</span>
+          </div>
+          <div class="stack-bar-wrap">
+            <div class="stack-bar" style="--target-width: 85%"></div>
+          </div>
+        </div>
+        <div class="stack-item" data-tech="spring">
+          <div class="stack-info">
+            <span class="stack-name">Spring Boot / Java / JWT</span>
+            <span class="stack-pct">80%</span>
+          </div>
+          <div class="stack-bar-wrap">
+            <div class="stack-bar" style="--target-width: 80%"></div>
+          </div>
+        </div>
+        <div class="stack-item" data-tech="wordpress">
+          <div class="stack-info">
+            <span class="stack-name">WordPress CMS & WooCommerce</span>
+            <span class="stack-pct">75%</span>
+          </div>
+          <div class="stack-bar-wrap">
+            <div class="stack-bar" style="--target-width: 75%"></div>
+          </div>
+        </div>
+        <div class="stack-item" data-tech="git">
+          <div class="stack-info">
+            <span class="stack-name">Git / GitHub & DevOps</span>
+            <span class="stack-pct">90%</span>
+          </div>
+          <div class="stack-bar-wrap">
+            <div class="stack-bar" style="--target-width: 90%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: Academic & Status Hub -->
+    <div class="dash-card status-card reveal" data-delay="400">
+      <div class="card-glow"></div>
+      <div class="card-header-icon">🎓</div>
+      <h3>Academic & Status</h3>
+      <div class="status-list">
+        <div class="status-item">
+          <span class="status-icon">🏫</span>
+          <div class="status-content">
+            <div class="status-label">University</div>
+            <div class="status-val">Khwaja Yunus Ali University</div>
+          </div>
+        </div>
+        <div class="status-item">
+          <span class="status-icon">📚</span>
+          <div class="status-content">
+            <div class="status-label">Department</div>
+            <div class="status-val">Computer Science & Engineering</div>
+          </div>
+        </div>
+        <div class="status-item">
+          <span class="status-icon">📍</span>
+          <div class="status-content">
+            <div class="status-label">Location</div>
+            <div class="status-val">Bangladesh (GMT+6)</div>
+          </div>
+        </div>
+        <div class="status-item">
+          <span class="status-icon">💼</span>
+          <div class="status-content">
+            <div class="status-label">Availability</div>
+            <div class="status-val status-val-badge">
+              <span class="status-dot-pulse"></span>
+              Open to Internship
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4: Dev Goals & Focus -->
+    <div class="dash-card focus-card reveal" data-delay="500">
+      <div class="card-glow"></div>
+      <div class="card-header-icon">🎯</div>
+      <h3>Current Focus & Vision</h3>
+      <div class="focus-content">
+        <div class="focus-block">
+          <h4>🚀 Learning Roadmap</h4>
+          <p>Spring Security, Flutter Clean Architecture, and REST API Best Practices.</p>
+        </div>
+        <div class="focus-block">
+          <h4>💡 Dev Philosophy</h4>
+          <p>"Logic will get you from A to B. Clean code & care will get you everywhere. I build robust cross-platform mobile apps & web services."</p>
+        </div>
+        <div class="focus-block">
+          <h4>🛡️ Active Projects</h4>
+          <p>Developing full-stack Spring-React applications and custom Flutter plugins.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── TERMINAL WIDGET (MODAL OVERLAY STYLE) ── -->
+<button id="term-open-btn" title="Open Terminal">⌨ Terminal</button>
+
+<div id="terminal-overlay">
+  <div class="terminal-box">
+    <div class="terminal-bar">
+      <div class="terminal-dot r" id="term-close-dot" title="Close Terminal"></div>
+      <div class="terminal-dot y"></div>
+      <div class="terminal-dot g"></div>
+      <div class="terminal-title">sojib@portfolio ~ terminal</div>
+    </div>
+    <div class="terminal-body" id="terminal-body">
+      <div class="term-line welcome-msg">
+        <pre class="term-ascii" style="color: #3fb950; font-family: monospace; font-size: clamp(.38rem, 1vw, .55rem); line-height: 1.15; overflow-x: auto; white-space: pre; margin-bottom: 1rem;">
+ ____   ___    _ ___ ____    _    _   _ __  __ _____ ____  
+/ ___| / _ \  | |_ _| __ )  / \  | | | |  \/  | ____|  _ \ 
+\___ \| | | |_| || ||  _ \ / _ \ | |_| | |\/| |  _| | | | |
+ ___) | |_| | |_| || || |_) / ___ \|  _  | |  | | |___| |_| |
+|____/ \___/ \___/___|____/_/   \_\_| |_|_|  |_|_____|____/ 
+        </pre>
+        <p class="term-line info">Welcome to Sojib's Interactive CLI [Version 1.0.0]</p>
+        <p class="term-line info">Type <span style="color: #58a6ff;">'help'</span> to see a list of available commands.</p>
+        
+        <div class="term-quick-actions" style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center;">
+          <span style="color: #8b949e; font-family: monospace; font-size: 0.75rem;">Quick Run:</span>
+          <button class="term-qbtn" onclick="runTermCmd('help')">help</button>
+          <button class="term-qbtn" onclick="runTermCmd('neofetch')">neofetch</button>
+          <button class="term-qbtn" onclick="runTermCmd('skills --visual')">skills</button>
+          <button class="term-qbtn" onclick="runTermCmd('github')">github</button>
+          <button class="term-qbtn" onclick="runTermCmd('sudo hack')">sudo hack</button>
+        </div>
+        <br/>
+      </div>
+    </div>
+    <div class="terminal-input-row">
+      <span class="terminal-prompt">sojib@portfolio:~$ </span>
+      <input id="terminal-input" type="text" placeholder="type 'help' for commands..." autocomplete="off" spellcheck="false"/>
+    </div>
+  </div>
+</div>
+
+<!-- AI CHAT -->
+<div id="ai-chat-btn" role="button" aria-label="Open AI chat" title="Chat with Sojib's AI">🤖</div>
+<div id="ai-chat-bubble" role="dialog" aria-label="AI Assistant">
+  <div class="chat-header">
+    <div class="chat-header-dot"></div>
+    <div class="chat-header-title">Ask about Sojib 🤖</div>
+    <div class="chat-header-sub">AI Assistant</div>
+    <button class="chat-close-btn" id="chat-close">✕</button>
+  </div>
+  <div class="chat-msgs" id="chat-msgs">
+    <div class="chat-msg bot">Hi! 👋 I'm Sojib's AI assistant. Ask me anything about him — skills, projects, or how to contact him!</div>
+  </div>
+  <div class="chat-quick">
+    <button class="chat-quick-btn" onclick="quickAsk('Who is Sojib?')">Who is Sojib?</button>
+    <button class="chat-quick-btn" onclick="quickAsk('What are his skills?')">Skills?</button>
+    <button class="chat-quick-btn" onclick="quickAsk('Is he available for internship?')">Internship?</button>
+    <button class="chat-quick-btn" onclick="quickAsk('What projects has he built?')">Projects?</button>
+  </div>
+  <div class="chat-input-row">
+    <input id="chat-input" type="text" placeholder="Ask something..." autocomplete="off"/>
+    <button id="chat-send" aria-label="Send">➤</button>
+  </div>
+</div>
+
+<!-- BACK TO TOP -->
+<button id="back-top" aria-label="Back to top">↑</button>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <a href="index.html" class="footer-logo">Sojib<span>.</span></a>
+    <p class="footer-copy">© 2025 Md Sojib Ahmed. Built with ❤️ and lots of ☕</p>
+    <div class="footer-socials">
+      <a href="https://github.com/sojibahmed404/" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+      <a href="https://www.linkedin.com/in/md-sojib-ahmed-a58ab03a2/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+      <a href="mailto:mdsojibahmed544@gmail.com" aria-label="Email">@</a>
+      <a href="https://www.facebook.com/mdsojib.ahamed.9615" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/global.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
