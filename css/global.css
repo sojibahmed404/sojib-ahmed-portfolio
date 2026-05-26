@@ -353,6 +353,11 @@ nav[role="navigation"].scrolled {
   gap: 5px;
   cursor: pointer;
   padding: .5rem;
+  background: none;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 .nav-ham span {
   display: block;
