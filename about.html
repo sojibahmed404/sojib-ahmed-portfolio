@@ -1,285 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Md Sojib Ahmed</title>
-  <meta name="description" content="Learn about Md Sojib Ahmed — his background, interests, skills, and academic journey as a CSE student at Khwaja Yunus Ali University."/>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2338bdf8'/%3E%3Cstop offset='100%25' stop-color='%23818cf8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='%230d1117' stroke='url(%23grad)' stroke-width='4'/%3E%3Ctext x='50%25' y='68%25' font-family='system-ui, sans-serif' font-weight='900' font-size='56' fill='url(%23grad)' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E"/>
-  <link rel="stylesheet" href="css/global.css"/>
-  <link rel="stylesheet" href="css/about.css"/>
+  <meta name="description"
+    content="Learn about Md Sojib Ahmed — his background, interests, skills, and academic journey as a CSE student at Khwaja Yunus Ali University." />
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2338bdf8'/%3E%3Cstop offset='100%25' stop-color='%23818cf8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='%230d1117' stroke='url(%23grad)' stroke-width='4'/%3E%3Ctext x='50%25' y='68%25' font-family='system-ui, sans-serif' font-weight='900' font-size='56' fill='url(%23grad)' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/about.css" />
 </head>
+
 <body>
 
-<!-- CURSOR -->
-<div id="cur-dot"></div>
-<div id="cur-ring"></div>
+  <!-- CURSOR -->
+  <div id="cur-dot"></div>
+  <div id="cur-ring"></div>
 
-<!-- KONAMI OVERLAY -->
-<div id="konami-overlay">
-  <div class="konami-emoji">🎉</div>
-  <h2 class="konami-title">You Found the Easter Egg!</h2>
-  <p class="konami-sub">↑↑↓↓←→←→BA — Incredible! 🕹️<br/>You truly have the developer instinct. Sojib would be proud!</p>
-  <button class="konami-close" id="konamiClose">Awesome, Close ✕</button>
-</div>
-
-<!-- LOADER -->
-<div id="loader">
-  <div class="loader-logo-wrap">
-    <div class="loader-logo">Sojib<span class="ld-accent">.</span></div>
-  </div>
-  <div class="loader-dots"><span></span><span></span><span></span></div>
-  <div class="loader-progress"><div class="loader-bar" id="loader-bar"></div></div>
-  <div class="loader-status" id="loader-status">Initializing...</div>
-</div>
-
-<!-- SOCIAL SIDEBAR -->
-<aside class="soc-sidebar">
-  <div class="soc-line"></div>
-  <a href="https://github.com/sojibahmed404/" target="_blank" rel="noopener" class="soc-btn">
-    <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-    <div class="soc-tip">GitHub</div>
-  </a>
-  <a href="https://www.linkedin.com/in/md-sojib-ahmed-a58ab03a2/" target="_blank" rel="noopener" class="soc-btn">in<div class="soc-tip">LinkedIn</div></a>
-  <a href="mailto:mdsojibahmed544@gmail.com" class="soc-btn">@<div class="soc-tip">Email</div></a>
-  <div class="soc-line bottom"></div>
-</aside>
-
-<!-- NAVIGATION -->
-<nav role="navigation" aria-label="Main navigation">
-  <a href="index.html" class="nav-logo">
-    <div class="nav-logo-icon">S</div>
-    <span>Sojib Ahmed</span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html" class="active">About</a></li>
-    <li><a href="skills.html">Skills</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <div class="nav-available"><span class="nav-available-dot"></span>Open to Internship</div>
-  <button class="nav-ham" id="nav-ham"><span></span><span></span><span></span></button>
-</nav>
-<nav class="nav-drawer" id="nav-drawer">
-  <div class="drawer-brand">
-    <div class="drawer-logo-icon">S</div>
-    <span>Sojib Ahmed</span>
-  </div>
-  <div class="drawer-links-wrap">
-    <a href="index.html">Home</a>
-    <a href="about.html" class="active">About</a>
-    <a href="skills.html">Skills</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-  </div>
-  <div class="drawer-socials">
-    <a href="https://github.com/sojibahmed404/" target="_blank" rel="noopener">GH</a>
-    <a href="https://www.linkedin.com/in/md-sojib-ahmed-a58ab03a2/" target="_blank" rel="noopener">in</a>
-    <a href="mailto:mdsojibahmed544@gmail.com">@</a>
-    <a href="https://www.facebook.com/mdsojib.ahamed.9615" target="_blank" rel="noopener">f</a>
-  </div>
-</nav>
-
-<!-- ABOUT SECTION -->
-<section id="about">
-  <div class="reveal">
-    <div class="section-eyebrow">01 — Identity</div>
-    <h1 class="section-title">About <span class="hl">Me</span></h1>
-    <p class="section-sub">A snapshot of who I am, what I love building, and where I'm headed in the world of tech.</p>
+  <!-- KONAMI OVERLAY -->
+  <div id="konami-overlay">
+    <div class="konami-emoji">🎉</div>
+    <h2 class="konami-title">You Found the Easter Egg!</h2>
+    <p class="konami-sub">↑↑↓↓←→←→BA — Incredible! 🕹️<br />You truly have the developer instinct. Sojib would be proud!
+    </p>
+    <button class="konami-close" id="konamiClose">Awesome, Close ✕</button>
   </div>
 
-  <div class="about-grid">
-    <!-- Profile Card -->
-    <div class="reveal from-left">
-      <div class="profile-card">
-        <div class="profile-card-bar">
-          <div class="profile-card-dots">
-            <div class="pcd r"></div><div class="pcd y"></div><div class="pcd g"></div>
-          </div>
-          <div class="profile-card-title">profile.info</div>
-        </div>
-        <div class="profile-photo-zone">
-          <img src="assets/sojib.png" alt="Md Sojib Ahmed"/>
-          <div class="profile-photo-overlay"></div>
-          <div class="profile-photo-tag">CSE · 2nd Year</div>
-        </div>
-        <div class="profile-data-table">
-          <div class="profile-row">
-            <div class="pr-key">Name</div>
-            <div class="pr-val">Md Sojib Ahmed</div>
-          </div>
-          <div class="profile-row">
-            <div class="pr-key">Uni</div>
-            <div class="pr-val">Khwaja Yunus Ali University</div>
-          </div>
-          <div class="profile-row">
-            <div class="pr-key">Dept</div>
-            <div class="pr-val">CSE — 2nd Year</div>
-          </div>
-          <div class="profile-row">
-            <div class="pr-key">Email</div>
-            <div class="pr-val"><a href="mailto:mdsojibahmed544@gmail.com" style="color:var(--cyan);text-decoration:none">mdsojibahmed544@gmail.com</a></div>
-          </div>
-          <div class="profile-row">
-            <div class="pr-key">From</div>
-            <div class="pr-val">Bangladesh 🇧🇩</div>
-          </div>
-          <div class="profile-row">
-            <div class="pr-key">Status</div>
-            <div class="pr-val available">Open to Work</div>
-          </div>
-        </div>
-      </div>
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-logo-wrap">
+      <div class="loader-logo">Sojib<span class="ld-accent">.</span></div>
     </div>
-
-    <!-- Right Content -->
-    <div class="about-right reveal">
-      <div class="about-intro">
-        <p>Hi! I'm <span class="hl-cyan">Md Sojib Ahmed</span> — a passionate Computer Science and Engineering student at <span class="hl-amber">Khwaja Yunus Ali University</span>. I'm on a mission to become a skilled <span class="hl-violet">full-stack developer and software engineer</span>.</p>
-        <p>I love creating things that live on the internet — from responsive web apps to cross-platform mobile apps with <span class="hl-cyan">Flutter</span>. I enjoy turning complex problems into clean, elegant solutions.</p>
-        <p>When I'm not coding, I'm exploring <span class="hl-amber">ethical hacking concepts</span>, contributing to open source, or grinding through competitive programming problems. 🚀</p>
-        <p>I believe in continuous learning and practical experience. I'm actively building real-world projects to sharpen my skills and grow as a developer every single day.</p>
-      </div>
-
-      <div class="interests-title">Areas of Interest</div>
-      <div class="interests-grid">
-        <div class="interest-card">
-          <div class="interest-icon">🌐</div>
-          <div>
-            <div class="interest-name">Web Development</div>
-            <div class="interest-sub">React, HTML/CSS/JS</div>
-          </div>
-        </div>
-        <div class="interest-card">
-          <div class="interest-icon">📱</div>
-          <div>
-            <div class="interest-name">Flutter App Dev</div>
-            <div class="interest-sub">Dart, Cross-platform</div>
-          </div>
-        </div>
-        <div class="interest-card">
-          <div class="interest-icon">🔐</div>
-          <div>
-            <div class="interest-name">Ethical Hacking</div>
-            <div class="interest-sub">Network Security</div>
-          </div>
-        </div>
-        <div class="interest-card">
-          <div class="interest-icon">⚙️</div>
-          <div>
-            <div class="interest-name">Software Engineering</div>
-            <div class="interest-sub">System Design, OOP</div>
-          </div>
-        </div>
-        <div class="interest-card">
-          <div class="interest-icon">🧠</div>
-          <div>
-            <div class="interest-name">Problem Solving</div>
-            <div class="interest-sub">Algorithms, DSA</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="skill-bars-title">Core Competency</div>
-      <div class="skill-bar-item">
-        <div class="skill-bar-top">
-          <div class="skill-bar-name"><span class="skill-bar-icon">🌐</span> Web Development</div>
-          <div class="skill-bar-pct">82%</div>
-        </div>
-        <div class="skill-track"><div class="skill-fill" data-w="82%" style="width:0"></div></div>
-      </div>
-      <div class="skill-bar-item">
-        <div class="skill-bar-top">
-          <div class="skill-bar-name"><span class="skill-bar-icon">📱</span> Flutter / Dart</div>
-          <div class="skill-bar-pct">70%</div>
-        </div>
-        <div class="skill-track"><div class="skill-fill" data-w="70%" style="width:0"></div></div>
-      </div>
-      <div class="skill-bar-item">
-        <div class="skill-bar-top">
-          <div class="skill-bar-name"><span class="skill-bar-icon">💻</span> Programming (C/C++/Java)</div>
-          <div class="skill-bar-pct">78%</div>
-        </div>
-        <div class="skill-track"><div class="skill-fill" data-w="78%" style="width:0"></div></div>
-      </div>
-      <div class="skill-bar-item">
-        <div class="skill-bar-top">
-          <div class="skill-bar-name"><span class="skill-bar-icon">🧠</span> Problem Solving</div>
-          <div class="skill-bar-pct">75%</div>
-        </div>
-        <div class="skill-track"><div class="skill-fill" data-w="75%" style="width:0"></div></div>
-      </div>
+    <div class="loader-dots"><span></span><span></span><span></span></div>
+    <div class="loader-progress">
+      <div class="loader-bar" id="loader-bar"></div>
     </div>
-  </div>
-</section>
-
-<!-- EDUCATION SECTION -->
-<section id="education">
-  <div class="reveal">
-    <div class="section-eyebrow">02 — Academic Log</div>
-    <h2 class="section-title"><span class="hl">Education</span> Journey</h2>
-    <p class="section-sub">My academic path from school to university, building the foundation for a tech career.</p>
+    <div class="loader-status" id="loader-status">Initializing...</div>
   </div>
 
-  <div class="edu-timeline reveal" data-delay="200">
-    <div class="edu-item">
-      <div class="edu-dot"></div>
-      <div class="edu-card-inner">
-        <div class="edu-period">🎓 2023 — Present</div>
-        <h3 class="edu-degree">B.Sc in Computer Science & Engineering</h3>
-        <div class="edu-institution">Khwaja Yunus Ali University (KYAU), Enayetpur, Sirajganj</div>
-        <div class="edu-meta">
-          <span class="tag">Currently 2nd Year</span>
-          <span class="tag amber">CSE Department</span>
-          <span class="tag emerald">Active Student</span>
-        </div>
-      </div>
+  <!-- SOCIAL SIDEBAR -->
+  <aside class="soc-sidebar">
+    <div class="soc-line"></div>
+    <a href="https://github.com/sojibahmed404/" target="_blank" rel="noopener" class="soc-btn">
+      <svg viewBox="0 0 24 24">
+        <path
+          d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+      </svg>
+      <div class="soc-tip">GitHub</div>
+    </a>
+    <a href="https://www.linkedin.com/in/md-sojib-ahmed-a58ab03a2/" target="_blank" rel="noopener" class="soc-btn">in
+      <div class="soc-tip">LinkedIn</div></a>
+    <a href="mailto:mdsojibahmed544@gmail.com" class="soc-btn">@<div class="soc-tip">Email</div></a>
+    <div class="soc-line bottom"></div>
+  </aside>
+
+  <!-- NAVIGATION -->
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="home.html" class="nav-logo">
+      <div class="nav-logo-icon">S</div>
+      <span>Sojib Ahmed</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-available"><span class="nav-available-dot"></span>Open to Internship</div>
+    <button class="nav-ham" id="nav-ham"><span></span><span></span><span></span></button>
+  </nav>
+  <nav class="nav-drawer" id="nav-drawer">
+    <div class="drawer-brand">
+      <div class="drawer-logo-icon">S</div>
+      <span>Sojib Ahmed</span>
     </div>
-
-    <div class="edu-item">
-      <div class="edu-dot"></div>
-      <div class="edu-card-inner">
-        <div class="edu-period">📚 2020 — 2022</div>
-        <h3 class="edu-degree">Higher Secondary Certificate (HSC)</h3>
-        <div class="edu-institution">Science Group</div>
-        <div class="edu-meta">
-          <span class="tag violet">HSC Passed</span>
-          <span class="tag">Science</span>
-        </div>
-      </div>
+    <div class="drawer-links-wrap">
+      <a href="home.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
     </div>
-
-    <div class="edu-item">
-      <div class="edu-dot"></div>
-      <div class="edu-card-inner">
-        <div class="edu-period">🏫 2015 — 2020</div>
-        <h3 class="edu-degree">Secondary School Certificate (SSC)</h3>
-        <div class="edu-institution">Science Group</div>
-        <div class="edu-meta">
-          <span class="tag amber">SSC Passed</span>
-          <span class="tag">Science</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<button id="back-top">↑</button>
-
-<footer>
-  <div class="footer-inner">
-    <a href="index.html" class="footer-logo">Sojib<span>.</span></a>
-    <p class="footer-copy">© 2025 Md Sojib Ahmed · mdsojibahmed544@gmail.com</p>
-    <div class="footer-socials">
+    <div class="drawer-socials">
       <a href="https://github.com/sojibahmed404/" target="_blank" rel="noopener">GH</a>
       <a href="https://www.linkedin.com/in/md-sojib-ahmed-a58ab03a2/" target="_blank" rel="noopener">in</a>
       <a href="mailto:mdsojibahmed544@gmail.com">@</a>
+      <a href="https://www.facebook.com/mdsojib.ahamed.9615" target="_blank" rel="noopener">f</a>
     </div>
-  </div>
-</footer>
+  </nav>
 
-<script src="js/global.js"></script>
-<script src="js/about.js"></script>
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <div class="reveal">
+      <div class="section-eyebrow">01 — Identity</div>
+      <h1 class="section-title">About <span class="hl">Me</span></h1>
+      <p class="section-sub">A snapshot of who I am, what I love building, and where I'm headed in the world of tech.
+      </p>
+    </div>
+
+    <div class="about-grid">
+      <!-- Profile Card -->
+      <div class="reveal from-left">
+        <div class="profile-card">
+          <div class="profile-card-bar">
+            <div class="profile-card-dots">
+              <div class="pcd r"></div>
+              <div class="pcd y"></div>
+              <div class="pcd g"></div>
+            </div>
+            <div class="profile-card-title">profile.info</div>
+          </div>
+          <div class="profile-photo-zone">
+            <img src="assets/sojib.png" alt="Md Sojib Ahmed" />
+            <div class="profile-photo-overlay"></div>
+            <div class="profile-photo-tag">CSE · 3rd Year</div>
+          </div>
+          <div class="profile-data-table">
+            <div class="profile-row">
+              <div class="pr-key">Name</div>
+              <div class="pr-val">Md Sojib Ahmed</div>
+            </div>
+            <div class="profile-row">
+              <div class="pr-key">Uni</div>
+              <div class="pr-val">Khwaja Yunus Ali University</div>
+            </div>
+            <div class="profile-row">
+              <div class="pr-key">Dept</div>
+              <div class="pr-val">CSE — 3rd Year</div>
+            </div>
+            <div class="profile-row">
+              <div class="pr-key">Email</div>
+              <div class="pr-val"><a href="mailto:mdsojibahmed544@gmail.com"
+                  style="color:var(--cyan);text-decoration:none">mdsojibahmed544@gmail.com</a></div>
+            </div>
+            <div class="profile-row">
+              <div class="pr-key">From</div>
+              <div class="pr-val">Bangladesh 🇧🇩</div>
+            </div>
+            <div class="profile-row">
+              <div class="pr-key">Status</div>
+              <div class="pr-val available">Open to Work</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div class="about-right reveal">
+        <div class="about-intro">
+          <p>Hi! I'm <span class="hl-cyan">Md Sojib Ahmed</span> — a passionate Computer Science and Engineering student
+            at <span class="hl-amber">Khwaja Yunus Ali University</span>. I'm on a mission to become a skilled <span
+              class="hl-violet">full-stack developer and software engineer</span>.</p>
+          <p>I love creating things that live on the internet — from responsive web apps to cross-platform mobile apps
+            with <span class="hl-cyan">Flutter</span>. I enjoy turning complex problems into clean, elegant solutions.
+          </p>
+          <p>When I'm not coding, I'm exploring <span class="hl-amber">ethical hacking concepts</span>, contributing to
+            open source, or grinding through competitive programming problems. 🚀</p>
+          <p>I believe in continuous learning and practical experience. I'm actively building real-world projects to
+            sharpen my skills and grow as a developer every single day.</p>
+        </div>
+
+        <div class="interests-title">Areas of Interest</div>
+        <div class="interests-grid">
+          <div class="interest-card">
+            <div class="interest-icon">🌐</div>
+            <div>
+              <div class="interest-name">Web Development</div>
+              <div class="interest-sub">React, HTML/CSS/JS</div>
+            </div>
+          </div>
+          <div class="interest-card">
+            <div class="interest-icon">📱</div>
+            <div>
+              <div class="interest-name">Flutter App Dev</div>
+              <div class="interest-sub">Dart, Cross-platform</div>
+            </div>
+          </div>
+          <div class="interest-card">
+            <div class="interest-icon">🔐</div>
+            <div>
+              <div class="interest-name">Ethical Hacking</div>
+              <div class="interest-sub">Network Security</div>
+            </div>
+          </div>
+          <div class="interest-card">
+            <div class="interest-icon">⚙️</div>
+            <div>
+              <div class="interest-name">Software Engineering</div>
+              <div class="interest-sub">System Design, OOP</div>
+            </div>
+          </div>
+          <div class="interest-card">
+            <div class="interest-icon">🧠</div>
+            <div>
+              <div class="interest-name">Problem Solving</div>
+              <div class="interest-sub">Algorithms, DSA</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-bars-title">Core Competency</div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top">
+            <div class="skill-bar-name"><span class="skill-bar-icon">🌐</span> Web Development</div>
+            <div class="skill-bar-pct">82%</div>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-w="82%" style="width:0"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top">
+            <div class="skill-bar-name"><span class="skill-bar-icon">📱</span> Flutter / Dart</div>
+            <div class="skill-bar-pct">70%</div>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-w="70%" style="width:0"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top">
+            <div class="skill-bar-name"><span class="skill-bar-icon">💻</span> Programming (C/C++/Java)</div>
+            <div class="skill-bar-pct">78%</div>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-w="78%" style="width:0"></div>
+          </div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top">
+            <div class="skill-bar-name"><span class="skill-bar-icon">🧠</span> Problem Solving</div>
+            <div class="skill-bar-pct">75%</div>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-w="75%" style="width:0"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <section id="education">
+    <div class="reveal">
+      <div class="section-eyebrow">02 — Academic Log</div>
+      <h2 class="section-title"><span class="hl">Education</span> Journey</h2>
+      <p class="section-sub">My academic path from school to university, building the foundation for a tech career.</p>
+    </div>
+
+    <div class="edu-timeline reveal" data-delay="200">
+      <div class="edu-item">
+        <div class="edu-dot"></div>
+        <div class="edu-card-inner">
+          <div class="edu-period">🎓 2023 — Present</div>
+          <h3 class="edu-degree">B.Sc in Computer Science & Engineering</h3>
+          <div class="edu-institution">Khwaja Yunus Ali University (KYAU), Enayetpur, Sirajganj</div>
+          <div class="edu-meta">
+            <span class="tag">Currently 2nd Year</span>
+            <span class="tag amber">CSE Department</span>
+            <span class="tag emerald">Active Student</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-dot"></div>
+        <div class="edu-card-inner">
+          <div class="edu-period">📚 2020 — 2022</div>
+          <h3 class="edu-degree">Higher Secondary Certificate (HSC)</h3>
+          <div class="edu-institution">Science Group</div>
+          <div class="edu-meta">
+            <span class="tag violet">HSC Passed</span>
+            <span class="tag">Science</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-dot"></div>
+        <div class="edu-card-inner">
+          <div class="edu-period">🏫 2015 — 2020</div>
+          <h3 class="edu-degree">Secondary School Certificate (SSC)</h3>
+          <div class="edu-institution">Science Group</div>
+          <div class="edu-meta">
+            <span class="tag amber">SSC Passed</span>
+            <span class="tag">Science</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <button id="back-top">↑</button>
+
+  <footer>
+    <div class="footer-inner">
+      <a href="home.html" class="footer-logo">Sojib<span>.</span></a>
+      <p class="footer-copy">© 2025 Md Sojib Ahmed · mdsojibahmed544@gmail.com</p>
+      <div class="footer-socials">
+        <a href="https://github.com/sojibahmed404/" target="_blank" rel="noopener">GH</a>
+        <a href="https://www.linkedin.com/in/md-sojib-ahmed-a58ab03a2/" target="_blank" rel="noopener">in</a>
+        <a href="mailto:mdsojibahmed544@gmail.com">@</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/global.js"></script>
+  <script src="js/about.js"></script>
 </body>
+
 </html>
